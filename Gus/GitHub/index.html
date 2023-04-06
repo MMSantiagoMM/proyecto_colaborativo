@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,146 @@
     <link rel="stylesheet" href="./style.css">
     <title>Guia de GitHub</title>
 </head>
+
 <body>
-    <main></main>
-    <nav></nav>
+    <header>
+        <img src="img/Banner.png" alt="">
+    </header>
+    <main>
+        <section class="section-container--cards1"> <!--contenedor de tarjetas-->
+            <article class="aticle-container--card">
+                <span class="git"></span>
+                <p class="section-container--title">Que es Git</p>
+                <p class="section-parrafo--card">Git es un sistema de control de versiones de código abierto ideado por
+                    Linus Torvalds (el padre del sistema operativo Linux) y actualmente es el
+                    sistema de control de versiones más extendido.
+                    <br><br>
+                    A diferencia de otros SCV Git tiene una arquitectura distribuida, lo que
+                    signica que en lugar de guardar todos los cambios de un proyecto en un
+                    único sitio, cada usuario contiene una copia del repositorio con el historial
+                    de cambios completo del proyecto. Esto aumenta signicativamente su
+                    rendimiento.
+                </p>
+            </article>
+            <article class="aticle-container--card">
+                <span class="github"></span>
+                <p class="section-container--title">Que es Github</p>
+                <p class="section-parrafo--card">GitHub es una compañía sin fines de lucro que ofrece un servicio de
+                    hosting de repositorios almacenados en la nube. Esencialmente, hace que sea más fácil para
+                    individuos y equipos usar Git como la versión de control y colaboración.
+                    <br><br>
+                    La interfaz de GitHub es bastante fácil de usar para el desarrollador novato que quiera aprovechar
+                    las ventajas del Git. Sin GitHub, usar un Git generalmente requiere de un poco más de conocimientos
+                    de tecnología y uso de una línea de comando.
+                </p>
+            </article>
+        </section>
+        <section class="container-table">
+            <table class="table">
+                <tr>
+                    <th>Comando</th>
+                    <th>Icono</th>
+                    <th>Definición</th>
+                </tr>
+                <tr>
+                    <th>git config</th>
+                    <td class="td-icon">
+                        <p>git config</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul>Establecer el nombre de usuario <u><b>git config --global user.name "Your-Full-Name"</b></u> </ul>
+                        <ul>Establecer el correo del usuario <u><b>git config --global user.email "your-email-address"</b></u></ul>
+                        <ul>Activar el coloreado de la salida <u><b>git config --global color.ui auto</b></u></ul>
+                        <ul>Mostrar el estado original en los <u><b>conictos git config --global merge.conflictstyle diff3</b></u></ul>
+                        <ul>Mostrar la conguración <u><b>git config --list</b></u></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>git init</th>
+                    <td class="td-icon">
+                        <p>gitinit</p>
+                    </td>
+                    <td class="td-definicion"><u><b>git init "nombre-repositorio"</b></u>  crea un repositorio nuevo con el nombre
+                        <u><b>"nombre-repositorio"</b></u> .
+                        Este comando crea crea una nueva carpeta con el nombre del repositorio, que a su vez contiene otra carpeta oculta llamada <b><u>.git</u></b>  que contiene la base de datos donde se registran los cambios en el repositorio. </td>
+                </tr>
+                <tr>
+                    <th>git clone</th>
+                    <td class="td-icon">
+                        <p>git clone</p>
+                    </td>
+                    <td class="td-definicion"><u><b>git clone "url-repositorio"</b></u>  crea una copia local del repositorio
+                        ubicado en la dirección; <u><b>"url-repositorio"</b></u>. <br>
+                        A partir de que se hace la copia, los dos repositorios, el original y la copia, son independientes, es decir, cualquier cambio en uno de ellos no se verá reejado en el otro. </td>
+                </tr>
+                <tr>
+                    <th>git add</th>
+                    <td class="td-icon">
+                        <p>git add</p>
+                    </td>
+                    <td class="td-definicion"> 
+                        <ul> <u><b>git add "fichero"</fichero></b></u>añade los cambios en el chero <u><b>fichero</b></u>  del directorio de trabajo a la zona de intercambio temporal.</ul>
+                        <ul> <u><b>git add "carpeta"</b></u>añade los cambios en todos los cheros de la carpeta <u><b>"carpeta"</b></u> del directorio de trabajo a la zona de intercambio temporal.</ul>
+                        <ul> <u><b>git add .</b></u> añade todos los cambios de todos los cheros no guardados aún en la zona de intercambio temporal.</ul></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td class="td-icon">
+                        <p></p>
+                    </td>
+                    <td class="td-definicion"> 
+                </tr>
+                <tr>
+                    <th></th>
+                    <td class="td-icon">
+                        <p></p>
+                    </td>
+                    <td class="td-definicion"> 
+                </tr>
+                <tr>
+                    <th></th>
+                    <td class="td-icon">
+                        <p></p>
+                    </td>
+                    <td class="td-definicion"> 
+                </tr>
+                <tr>
+                    <th></th>
+                    <td class="td-icon">
+                        <p></p>
+                    </td>
+                    <td class="td-definicion"> 
+                </tr>
+                <tr>
+                    <th></th>
+                    <td class="td-icon">
+                        <p></p>
+                    </td>
+                    <td class="td-definicion"> 
+                </tr>
+                <tr>
+                    <th></th>
+                    <td class="td-icon">
+                        <p></p>
+                    </td>
+                    <td class="td-definicion"> 
+                </tr>
+                <tr>
+                    <th></th>
+                    <td class="td-icon">
+                        <p></p>
+                    </td>
+                    <td class="td-definicion"> 
+                </tr>
+            </table>
+        </section>
+        <section>
+            <picture>
+                <img src="" alt="">
+            </picture>
+        </section>
+    </main>
     <footer></footer>
 </body>
+
 </html>
