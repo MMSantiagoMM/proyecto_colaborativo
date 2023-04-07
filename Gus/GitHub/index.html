@@ -359,9 +359,15 @@
                             <ul><u><b>Mensaje de error (español)</b></u> </ul>
                             <ul>git: 'comando' no es un comando de git. Mira 'git --help'.</ul>
                             <ul><u><b>Causa:</b></u><br>
-                                Este ocurre cuando se ejecuta un comando que no existe en git, normalmente ocasionado por un typo o problema de escritura. Por ejemplo, git push es un comando válido, pero git puhs no lo es, y debería arrojar el error mencionado.</ul>
+                                Este ocurre cuando se ejecuta un comando que no existe en git, normalmente ocasionado
+                                por un typo o problema de escritura. Por ejemplo, git push es un comando válido, pero
+                                git puhs no lo es, y debería arrojar el error mencionado.</ul>
                             <ul><u><b>Solución:</b></u> <br>
-                                La solución más simple consiste en revisar que el comando que se está ejecutando esté correctamente escrito. Si no estás seguro de la escritura, puedes utilizar el comando git help para desplegar la ayuda de git, que muestra la lista de comandos válidos. También puedes revisar la documentación oficial de git para ver si el comando existe.</ul>
+                                La solución más simple consiste en revisar que el comando que se está ejecutando esté
+                                correctamente escrito. Si no estás seguro de la escritura, puedes utilizar el comando
+                                git help para desplegar la ayuda de git, que muestra la lista de comandos válidos.
+                                También puedes revisar la documentación oficial de git para ver si el comando existe.
+                            </ul>
                     </tr>
                     <tr>
                         <td class="td-icon">
@@ -372,45 +378,84 @@
                             <ul>fatal: not a git repository (or any of the parent directories): .git</ul>
                             <ul><u><b>Mensaje de error (español)</b></u> </ul>
                             <ul>fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git</ul>
-                            <ul> <u><b></b></u> Causa
-                                Esto ocurre al ejecutar ciertos comandos válidos que empiecen con git (e.g. git status). El error indica que la terminal desde la cual se está ejecutando el comando no está ubicada en un directorio ni en un subdirectorio que contenga un repositorio.</ul>
-                            <ul></ul>
+                            <ul><u><b>Causa:</b></u></ul>
+                            <ul>Esto ocurre al ejecutar ciertos comandos válidos que empiecen con git (e.g. git status).
+                                El error indica que la terminal desde la cual se está ejecutando el comando no está
+                                ubicada en un directorio ni en un subdirectorio que contenga un repositorio.</ul>
+                            <ul><u><b>Solución:</b></u></ul>
+                            <ul>La solución normalmente es de mover la terminal actual a un directorio que contenga el
+                                repositorio deseado. Para mover la terminal de directorio/carpeta, se puede usar el
+                                comando cd seguido del nombre del directorio al cual se quiere acceder. Por ejemplo, cd
+                                mi_repositorio mueve la terminal desde el directorio actual hasta el subdirectorio
+                                "mi_repositorio".</ul>
                     </tr>
                     <tr>
                         <td class="td-icon">
-                            <p></p>
+                            <p><u><b>Another git process seems to be running in this repository</b></u> </p>
                         </td>
                         <td class="td-definicion">
-                            <ul><u><b></b></u> </ul>
-                            <ul></ul>
-                            <ul><u><b></b></u> </ul>
-                            <ul></ul>
-                            <ul> <u><b></b></u></ul>
-                            <ul></ul>
-                    </tr>
+                            <ul><u><b>Mensaje de error (inglés)</b></u> </ul>
+                            <ul>fatal: Unable to create '.git/index.lock': File exists.
+
+                                Another git process seems to be running in this repository, e.g.
+                                an editor opened by 'git commit'. Please make sure all processes
+                                are terminated then try again. If it still fails, a git process
+                                may have crashed in this repository earlier:
+                                remove the file manually to continue.</ul>
+                            <ul><u><b>Mensaje de error (español)</b></u> </ul>
+                            <ul>fatal: No se puede crear '.git/index.lock': El fichero ya existe.
+
+                                Otro proceso git parece estar ejecutando en el repositorio, es decir
+                                un editor abierto con 'git commit'. Por favor asegúrate de que todos los procesos
+                                estén terminados y vuelve a intentar. Si el fallo permanece, un proceso git
+                                puede haber roto el repositorio antes:
+                                borra el archivo manualmente para continuar.</ul>
+                            <ul><u><b>Causa:</b></u></ul>
+                            <ul>Se está ejecutando otro proceso de <u><b>git</b></u> (posiblemente en otra
+                                consola/terminal) en el repositorio que estás intentando modificar actualmente (como un
+                                <u><b>commit</b></u> ). También, es posible que un proceso haya terminado
+                                inesperadamente, y el repositorio se haya bloqueado.</ul>
+                            <ul><u><b>Solución:</b></u></ul>
+                            <ul>La solución más simple consiste en revisar las terminales que tengas abiertas y ver si
+                                hay algún proceso de git ejecutandose (asegúrate también de revisar cualquier editor de
+                                texto que estés ocupando). Si lo encuentras, puedes terminarlo normalmente o forzar a
+                                que termine de ejecutarse presionando <u><b>Ctrl-C</b></u> o <u><b>Cmd-C</b></u>.
+                                Otra solución consiste en ir al directorio base del repositorio, y ejecutar el siguiente
+                                comando:</ul>
+                            <ul><u><b>rm -f .git/index.lock</b></u></ul>
+                        </tr>
                     <tr>
                         <td class="td-icon">
-                            <p></p>
+                            <p>No configured push destination</p>
                         </td>
                         <td class="td-definicion">
-                            <ul><u><b></b></u> </ul>
-                            <ul></ul>
-                            <ul><u><b></b></u> </ul>
-                            <ul></ul>
-                            <ul> <u><b></b></u></ul>
-                            <ul></ul>
-                    </tr>
+                            <ul><u><b>Mensaje de error (inglés)</b></u> </ul>
+                            <ul>fatal: No configured push destination.</ul>
+                            <ul><u><b>Mensaje de error (español)</b></u> </ul>
+                            <ul>fatal: No se ha configurado un destino para el empuje.</ul>
+                            <ul><u><b>Causa:</b></u></ul>
+                            <ul>Esto normalmente sucede cuando intentamos ejecutar el comando <u><b>git push</b></u>, pero no existe ningún destino remoto configurado en el repositorio actual.</ul>
+                            <ul><U><b>Solución:</b></U></ul>
+                            <ul>La solución consiste en configurar un destino. Para aquello, se puede ejecutar el siguiente comando:</ul>
+                            <ul><u><b>git remote add origin "url"</b></u></ul>
+                            <ul>Acá <u><b>origin</b></u>  es el nombre que se le dará al destino remoto, y <u><b>url</b></u>  es la dirección del repositorio remoto al cual se quiere conectar. Se debe reemplazar por la dirección deseada. Por ejemplo, si el repositorio remoto se encuentra en GitHub.</ul>
+                            <ul>Normalmente el primer comando que se debe ejecutar luego de configurar un remoto es <u><b>git push -u origin "nombre_rama"</b></u>, que empujará los cambios locales al repositorio remoto en la rama <u><b>nombre_rama</b></u>  (normalmente <u><b>master</b></u>  o <u><b>main</b></u>), y configurará el repositorio local para que el destino remoto <u><b>origin</b></u>  sea el destino por defecto para el comando <u><b>git push</b></u>.</ul>
+                        </tr>
                     <tr>
                         <td class="td-icon">
-                            <p></p>
+                            <p>The current branch has no upstream branch</p>
                         </td>
                         <td class="td-definicion">
-                            <ul><u><b></b></u> </ul>
-                            <ul></ul>
-                            <ul><u><b></b></u> </ul>
-                            <ul></ul>
-                            <ul> <u><b></b></u></ul>
-                            <ul></ul>
+                            <ul><u><b>Mensaje de error (inglés)</b></u></ul>
+                            <ul>fatal: The current branch <branch_name> has no upstream branch.</ul>
+                            <ul> <u><b>Mensaje de error (español)</b></u></ul>
+                            <ul>fatal: La rama actual <nombre_rama> no tiene una rama upstream.</ul>
+                            <ul><u><b>Causa:</b></u></ul>
+                            <ul>Esto normalmente sucede cuando intentamos ejecutar el comando <u><b>git push</b></u> estando en una nueva rama que no existe o no está configurada en el repositorio remoto.</ul>
+                            <ul><u><b>Solución:</b></u></ul>
+                            <ul>La solución consiste en configurar la rama actual como una rama upstream. Para aquello, se puede ejecutar el siguiente comando:</ul>
+                            <ul><u><b>git push --set-upstream origin "nombre_rama".</b></u></ul>
+                            <ul>Donde <u><b>"nombre_rama"</b></u> debe remplazarse por el nombre de la rama actual (normalmente <u><b>master</b></u> o <u><b>main</b></u>), y <u><b>origin</b></u> es el nombre del destino remoto al cual se quiere conectar.</ul>
                     </tr>
                     <tr>
                         <td class="td-icon">
@@ -425,9 +470,13 @@
                             <ul></ul>
                     </tr>
                 </table>
+                <hr>
             </div>
         </div>
-    </main> 
+    </main>
+    <section>
+        <hr><br>
+    </section>
     <footer>
         <img class="img" src="./img/LogoGit.png" alt="Logo Git">
         <img class="img" src="./img/gitlogo.png" alt="Logo GitHub">

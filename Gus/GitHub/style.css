@@ -104,12 +104,12 @@ header img {
 .container-tables {
     position: relative;
     display: flex;
+    flex-wrap: nowrap;
     padding: 5px 10px;
     height: auto;
     width: 100%;
-    
-  
 }
+
 
 .table1 {
     position: relative;
@@ -198,11 +198,11 @@ th {
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: auto;
-    background-color: rgb(199, 198, 173);
-    padding: 10px 20px;
+    background-color: rgb(247, 246, 216);
+    padding: 15px 20px;
     border-radius: 30px;
   }
 
