@@ -19,13 +19,12 @@
                 <span class="git"></span>
                 <p class="section-container--title">Que es Git</p>
                 <p class="section-parrafo--card">Git es un sistema de control de versiones de código abierto ideado por
-                    Linus Torvalds (el padre del sistema operativo Linux) y actualmente es el
-                    sistema de control de versiones más extendido.
+                    Linus Torvalds (el padre del sistema operativo Linux) y actualmente es el sistema de control de
+                    versiones más extendido.
                     <br><br>
-                    A diferencia de otros SCV Git tiene una arquitectura distribuida, lo que
-                    signica que en lugar de guardar todos los cambios de un proyecto en un
-                    único sitio, cada usuario contiene una copia del repositorio con el historial
-                    de cambios completo del proyecto. Esto aumenta signicativamente su
+                    A diferencia de otros SCV Git tiene una arquitectura distribuida, lo que signica que en lugar de
+                    guardar todos los cambios de un proyecto en un único sitio, cada usuario contiene una copia del
+                    repositorio con el historial de cambios completo del proyecto. Esto aumenta signicativamente su
                     rendimiento.
                 </p>
             </article>
@@ -42,112 +41,397 @@
                 </p>
             </article>
         </section>
-        <section class="container-table">
-            <table class="table">
+        <div class="container-tables">
+            <table class="table1">
                 <tr>
-                    <th>Comando</th>
                     <th>Icono</th>
                     <th>Definición</th>
                 </tr>
                 <tr>
-                    <th>git config</th>
                     <td class="td-icon">
                         <p>git config</p>
                     </td>
                     <td class="td-definicion">
-                        <ul>Establecer el nombre de usuario <u><b>git config --global user.name "Your-Full-Name"</b></u> </ul>
-                        <ul>Establecer el correo del usuario <u><b>git config --global user.email "your-email-address"</b></u></ul>
+                        <ul class="container-title-definicion"><u>Conguración de Git</u></ul>
+                        <ul>Establecer el nombre de usuario <u><b>git config --global user.name
+                                    "Your-Full-Name"</b></u></ul>
+                        <ul>Establecer el correo del usuario <u><b>git config --global user.email
+                                    "your-email-address"</b></u></ul>
                         <ul>Activar el coloreado de la salida <u><b>git config --global color.ui auto</b></u></ul>
-                        <ul>Mostrar el estado original en los <u><b>conictos git config --global merge.conflictstyle diff3</b></u></ul>
+                        <ul>Mostrar el estado original en los <u><b>conictos git config --global merge.conflictstyle
+                                    diff3</b></u></ul>
                         <ul>Mostrar la conguración <u><b>git config --list</b></u></ul>
                     </td>
                 </tr>
                 <tr>
-                    <th>git init</th>
                     <td class="td-icon">
-                        <p>gitinit</p>
+                        <p>git init</p>
                     </td>
-                    <td class="td-definicion"><u><b>git init "nombre-repositorio"</b></u>  crea un repositorio nuevo con el nombre
-                        <u><b>"nombre-repositorio"</b></u> .
-                        Este comando crea crea una nueva carpeta con el nombre del repositorio, que a su vez contiene otra carpeta oculta llamada <b><u>.git</u></b>  que contiene la base de datos donde se registran los cambios en el repositorio. </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Creación de un repositorio nuevo.</u></ul>
+                        <ul><u><b>git init "nombre-repositorio"</b></u> crea un repositorio nuevo con el nombre
+                            <u><b>"nombre-repositorio"</b></u> .Este comando crea crea una nueva carpeta con el
+                            nombre del repositorio, que a su vez contiene otra carpeta oculta llamada
+                            <b><u>.git</u></b> que contiene la base de datos donde se registran los cambios en el
+                            repositorio.
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
-                    <th>git clone</th>
                     <td class="td-icon">
                         <p>git clone</p>
                     </td>
-                    <td class="td-definicion"><u><b>git clone "url-repositorio"</b></u>  crea una copia local del repositorio
-                        ubicado en la dirección; <u><b>"url-repositorio"</b></u>. <br>
-                        A partir de que se hace la copia, los dos repositorios, el original y la copia, son independientes, es decir, cualquier cambio en uno de ellos no se verá reejado en el otro. </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Copia de repositorios.</u></ul>
+                        <ul><u><b>git clone "url-repositorio"</b></u> crea una copia local del repositorio ubicado
+                            en la dirección; <u><b>"url-repositorio"</b></u>. <br> A partir de que se hace la copia,
+                            los dos repositorios, el original y la copia, son independientes, es decir, cualquier
+                            cambio en uno de ellos no se verá reejado en el otro.</ul>
+                    </td>
                 </tr>
                 <tr>
-                    <th>git add</th>
                     <td class="td-icon">
                         <p>git add</p>
                     </td>
-                    <td class="td-definicion"> 
-                        <ul> <u><b>git add "fichero"</fichero></b></u>añade los cambios en el chero <u><b>fichero</b></u>  del directorio de trabajo a la zona de intercambio temporal.</ul>
-                        <ul> <u><b>git add "carpeta"</b></u>añade los cambios en todos los cheros de la carpeta <u><b>"carpeta"</b></u> del directorio de trabajo a la zona de intercambio temporal.</ul>
-                        <ul> <u><b>git add .</b></u> añade todos los cambios de todos los cheros no guardados aún en la zona de intercambio temporal.</ul></td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Añadir cambios a la zona de intercambio
+                                temporal.</u></ul>
+                        <ul><u><b>git add "fichero"</fichero></b></u> añade los cambios en el chero
+                            <u><b>fichero</b></u> del directorio de trabajo a la zona de intercambio temporal.
+                        </ul>
+                        <ul><u><b>git add "carpeta"</b></u> añade los cambios en todos los cheros de la carpeta
+                            <u><b>"carpeta"</b></u> del directorio de trabajo a la zona de intercambio temporal.
+                        </ul>
+                        <ul><u><b>git add .</b></u> añade todos los cambios de todos los cheros no guardados aún en
+                            la zona de intercambio temporal.</ul>
+                    </td>
                 </tr>
                 <tr>
-                    <th></th>
                     <td class="td-icon">
-                        <p></p>
+                        <p>git commit</p>
                     </td>
-                    <td class="td-definicion"> 
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Añadir cambios al repositorio.</u></ul>
+                        <ul><u><b>git commit -m "mensaje"</b></u> confirma todos los cambios de la zona de
+                            intercambio temporal añadiéndolos al repositorio y creando una nueva versión del
+                            proyecto. <u><b>"mensaje"</b></u> es un breve mensaje describiendo los cambios
+                            realizados que se asociará a la nueva versión del proyecto.</ul>
+                        <ul><u><b>git commit --amend -m "mensaje"</b></u> cambia el mensaje del último commit por el
+                            nuevo mensaje <u><b>"mensaje"</b></u>.</ul>
                 </tr>
                 <tr>
-                    <th></th>
                     <td class="td-icon">
-                        <p></p>
+                        <p>git status</p>
                     </td>
-                    <td class="td-definicion"> 
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Estado e historia de un repositorio.</u></ul>
+                        <ul><u><b>git status</b></u> muestra el estado de los cambios en el repositorio desde la
+                            última versión guardada. En particular, muestra los cheros con cambios en el directorio
+                            de trabajo que no se han añadido a la zona de intercambio temporal y los cheros en la
+                            zona de intercambio temporal que no se han añadido al repositorio.</ul>
                 </tr>
                 <tr>
-                    <th></th>
                     <td class="td-icon">
-                        <p></p>
+                        <p>git log</p>
                     </td>
-                    <td class="td-definicion"> 
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Mostrar el historial de versiones de un
+                                repositorio.</u></ul>
+                        <ul><b><u>git log</u></b> muestra el historial de commits de un repositorio ordenado
+                            cronológicamente. Para cada commit muestra su código hash, el autor, la fecha, la hora y
+                            el mensaje asociado. Este comando es muy versátil y muestra la historia del repositorio
+                            en distintos formatos dependiendo de los parámetros que se le den. Los más comunes son:
+                        </ul>
+                        <ul><b><u>--oneline </u></b> muestra cada commit en una línea produciendo una salida más
+                            compacta.</ul>
+                        <ul><b><u>--graph</u></b> muestra la historia en forma de grafo.</ul>
                 </tr>
                 <tr>
-                    <th></th>
                     <td class="td-icon">
-                        <p></p>
+                        <p>git show</p>
                     </td>
-                    <td class="td-definicion"> 
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Mostrar los datos de un commit.</u></ul>
+                        <ul><u><b>git show</b></u> muestra el usuario, el día, la hora y el mensaje del último
+                            commit, así como las diferencias con el anterior.</ul>
+                        <ul><u><b>git show "commit"</b></u> muestra el usuario, el día, la hora y el mensaje del
+                            commit indicado, así como las diferencias con el anterior.</ul>
                 </tr>
                 <tr>
-                    <th></th>
                     <td class="td-icon">
-                        <p></p>
+                        <p>git annotate</p>
                     </td>
-                    <td class="td-definicion"> 
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Mostrar el historial de cambios de un chero.</u>
+                        </ul>
+                        <ul><u><b>git annotate</b></u> muestra el contenido de un chero anotando cada línea con
+                            información del commit en el que se introdujo. Cada línea de la salida contiene los 8
+                            primeros dígitos del código hash del commit correspondiente al cambio, el autor de los
+                            cambio, la fecha, el número de línea del chero y el contenido de la línea.</ul>
                 </tr>
                 <tr>
-                    <th></th>
                     <td class="td-icon">
-                        <p></p>
+                        <p>git diff</p>
                     </td>
-                    <td class="td-definicion"> 
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Mostrar las diferencias entre versiones.</u></ul>
+                        <ul><u><b>git diff</b></u> muestra las diferencias entre el directorio de trabajo y la zona
+                            de intercambio temporal.</ul>
+                        <ul><u><b>git diff --cached</b></u> muestra las diferencias entre la zona de intercambio
+                            temporal y el último commit.</ul>
+                        <ul><u><b>git diff HEAD </b></u> muestra la diferencia entre el directorio de trabajo y el
+                            último commit.</ul>
                 </tr>
                 <tr>
-                    <th></th>
+                    </th>
                     <td class="td-icon">
-                        <p></p>
+                        <p>git checkout</p>
                     </td>
-                    <td class="td-definicion"> 
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Deshacer cambios eliminar cambios del directorio
+                                de trabajo o volver a una versión anterior.</u></ul>
+                        <ul><u><b>git checkout "commit" -- "file"</b></u> actualiza el fichero <u><b>"file"</b></u>
+                            a la versión correspondiente al commit <u><b>"commit".</b></u>Suele utilizarse para
+                            eliminar los cambios en un fichero que no han sido guardados aún en la zona de
+                            intercambio temporal, mediante el comando <u><b>git checkout HEAD -- "file"</b></u>.
+                        </ul>
+                        <ul class="container-title-definicion"><u>Cambio de ramas.</u></ul>
+                        <ul><u><b>git checkout "rama"</rama></b></u> actualiza los cheros del directorio de trabajo
+                            a la última versión del repositorio correspondiente a la rama <u><b>"rama"</b></u>, y la
+                            activa, es decir, HEAD pasa a apuntar al último commit de esta rama.</ul>
+                        <ul><u><b>git checkout -b "rama"</rama></b></u>crea una nueva rama con el nombre
+                            <u><b>"rama"</b></u> y la activa, es decir, HEAD pasa a apuntar al último commit de esta
+                            rama. Este comando es equivalente aplicar los comandos <u><b>git branch "rama" </b></u>
+                            y después git checkout <u><b>"rama"</b></u>.
+                        </ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git reset</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Eliminar cambios de la zona de intercambio
+                                temporal.</u></ul>
+                        <ul><u><b>git reset "fichero"</b></u>elimina los cambios del chero <u><b>"fichero"</b></u>
+                            de la zona de intercambio temporal, pero preserva los cambios en el directorio de
+                            trabajo.</ul>
+                        <ul>Para eliminar por completo los cambios de un chero que han sido guardados en la zona de
+                            intercambio temporal hay que aplicar este comando y después <u><b>git checkout HEAD --
+                                    "fichero"</b></u>.</ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git reset</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Eliminar cambios de un commit.</u></ul>
+                        <ul><u><b>git reset --hard "commit"</b></u> elimina todos los cambios desde el commit
+                            <u><b>"commit"</b></u> y actualiza el HEAD este commit. ¡Ojo! Usar con cuidado este
+                            comando pues los cambios posteriores al commit indicado se pierden por completo. Suele
+                            usarse para eliminar todos los cambios en el directorio de trabajo desde el último
+                            commit mediante el comando <u><b>git reset --hard HEAD.</b></u>
+                        </ul>
+                        <ul><u><b>git reset "commit"</commit></b></u> actualiza el HEAD al commit <commit>, es
+                                decir, elimina todos los commits posteriores a este commit, pero no elimina los
+                                cambios del directorio de trabajo.</ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git branch</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Creación de ramas.</u> </ul>
+                        <ul><u><b>git branch "rama"</b></u> crea una nueva rama con el nombre <u><b>"rama"</b></u>
+                            en el repositorio a partir del último commit, es decir, donde apunte HEAD. Al crear una
+                            rama a partir de un commit, el ujo de commits se bifurca en dos de manera que se pueden
+                            desarrollar dos versiones del proyecto en paralelo.</ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git log</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Listado de ramas</u></ul>
+                        <ul><u><b>git branch</b></u> muestra las ramas activas de un repositorio indicando con la
+                            rama activa en ese momento.</ul>
+                        <ul><u><b>git log --graph --oneline</b></u> muestra la historia del repositorio en forma de
+                            grafo <u><b>(--graph)</b></u> incluyendo todas las ramas <u><b>(--all).</b></u></ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git merge</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Fusión de ramas.</u></ul>
+                        <ul><u><b>git merge "rama"</b></u> integra los cambios de la rama <u><b>"rama"</b></u> en la
+                            rama actual a la que apunta HEAD.</ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git rebase</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Reorganización de ramas</u></ul>
+                        <ul><u><b>git rebase "rama-1" "rama-2"</b></u> replica los cambios de la rama
+                            <u><b>"rama-2"</b></u> en la rama <u><b>"rama-1"</b></u> partiendo del ancestro común de
+                            ambas ramas. El resultado es el mismo que la fusión de las dos ramas pero la bifurcación
+                            de la <u><b>"rama-2"</b></u> desaparece ya que sus commits pasan a estar en la
+                            <u><b>"rama-1"</b></u>.
+                        </ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git branch -d</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Eliminación de ramas.</u> </ul>
+                        <ul><u><b>git branch -d "rama"</b></u>elimina la rama de nombre <u><b>"rama"</b></u> siempre
+                            y cuando haya sido fusionada previamente.</ul>
+                        <ul><u><b>git branch -D "rama"</b></u>elimina la rama de nombre <u><b>"rama"</b></u> incluso
+                            si no ha sido fusionada. Si la rama no ha sido fusionada previamente se perderán todos
+                            los cambios de esa rama.</ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git remote add</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Añadir un repositorio remoto.</u></ul>
+                        <ul><u><b>git remote add "repositorio-remoto" "url"</b></u> crea un enlace con el nombre
+                            <u><b>"repositorio-remoto"</b></u> a un repositorio remoto ubicado en la dirección
+                            <u><b>"url"</b></u>.
+                        </ul><br>
+                        <ul class="container-title-definicion"><u>NOTA</u></ul>
+                        <ul>Cuando se añade un repositorio remoto a un repositorio, Git seguirá también los cambios
+                            del repositorio remoto de manera que se pueden descargar los cambios del repositorio
+                            remoto al local y se pueden subir los cambios del repositorio local al remoto.</ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git remote</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Lista de repositorios remotos.</u></ul>
+                        <ul><u><b>git remote</b></u>muestra un listado con todos los enlaces a repositorios remotos
+                            denidos en un repositorio local.</ul>
+                        <ul><u><b>git remote -v</b></u> muestra además las direcciones url para cada repositorio
+                            remoto. </ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git pull</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Descargar cambios desde un repositorio remoto.</u>
+                        </ul>
+                        <ul><u><b>git pull "remoto" "rama"</b></u>descarga los cambios de la rama
+                            <u><b>"rama"</b></u> del repositorio remoto <u><b>"remoto"</b></u> y los integra en la
+                            última versión del repositorio local, es decir, en el HEAD.
+                        </ul>
+                        <ul><u><b>git fetch "remoto"</b></u>descarga los cambios del repositorio remoto
+                            <u><b>"remoto"</b></u> pero no los integra en la última versión del repositorio local.
+                        </ul>
+                </tr>
+                <tr>
+                    <td class="td-icon">
+                        <p>git push</p>
+                    </td>
+                    <td class="td-definicion">
+                        <ul class="container-title-definicion"><u>Subir cambios a un repositorio remoto</u> </ul>
+                        <ul><u><b>git push "remoto" "rama"</b></u>sube al repositorio remoto <u><b>"remoto"</b></u>
+                            los cambios de la rama <u><b>"rama"</b></u> en el repositorio local. </ul>
                 </tr>
             </table>
-        </section>
-        <section>
-            <picture>
-                <img src="" alt="">
-            </picture>
-        </section>
+            <hr>
+            <div class="div-container--table2">
+                <table class="container-table2">
+                    <tr>
+                        <th>Error</th>
+                        <th>Definición y Posible solución</th>
+                    </tr>
+                    <tr>
+                        <td class="td-icon">
+                            <p>not a git command</p>
+                        </td>
+                        <td class="td-definicion">
+                            <ul><u><b>Mensaje de error (inglés)</b></u> </ul>
+                            <ul>git: 'comando' is not a git command. See 'git --help'.</ul>
+                            <ul><u><b>Mensaje de error (español)</b></u> </ul>
+                            <ul>git: 'comando' no es un comando de git. Mira 'git --help'.</ul>
+                            <ul><u><b>Causa:</b></u><br>
+                                Este ocurre cuando se ejecuta un comando que no existe en git, normalmente ocasionado por un typo o problema de escritura. Por ejemplo, git push es un comando válido, pero git puhs no lo es, y debería arrojar el error mencionado.</ul>
+                            <ul><u><b>Solución:</b></u> <br>
+                                La solución más simple consiste en revisar que el comando que se está ejecutando esté correctamente escrito. Si no estás seguro de la escritura, puedes utilizar el comando git help para desplegar la ayuda de git, que muestra la lista de comandos válidos. También puedes revisar la documentación oficial de git para ver si el comando existe.</ul>
+                    </tr>
+                    <tr>
+                        <td class="td-icon">
+                            <p>not a git repository</p>
+                        </td>
+                        <td class="td-definicion">
+                            <ul><u><b>Mensaje de error (inglés)</b></u> </ul>
+                            <ul>fatal: not a git repository (or any of the parent directories): .git</ul>
+                            <ul><u><b>Mensaje de error (español)</b></u> </ul>
+                            <ul>fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git</ul>
+                            <ul> <u><b></b></u> Causa
+                                Esto ocurre al ejecutar ciertos comandos válidos que empiecen con git (e.g. git status). El error indica que la terminal desde la cual se está ejecutando el comando no está ubicada en un directorio ni en un subdirectorio que contenga un repositorio.</ul>
+                            <ul></ul>
+                    </tr>
+                    <tr>
+                        <td class="td-icon">
+                            <p></p>
+                        </td>
+                        <td class="td-definicion">
+                            <ul><u><b></b></u> </ul>
+                            <ul></ul>
+                            <ul><u><b></b></u> </ul>
+                            <ul></ul>
+                            <ul> <u><b></b></u></ul>
+                            <ul></ul>
+                    </tr>
+                    <tr>
+                        <td class="td-icon">
+                            <p></p>
+                        </td>
+                        <td class="td-definicion">
+                            <ul><u><b></b></u> </ul>
+                            <ul></ul>
+                            <ul><u><b></b></u> </ul>
+                            <ul></ul>
+                            <ul> <u><b></b></u></ul>
+                            <ul></ul>
+                    </tr>
+                    <tr>
+                        <td class="td-icon">
+                            <p></p>
+                        </td>
+                        <td class="td-definicion">
+                            <ul><u><b></b></u> </ul>
+                            <ul></ul>
+                            <ul><u><b></b></u> </ul>
+                            <ul></ul>
+                            <ul> <u><b></b></u></ul>
+                            <ul></ul>
+                    </tr>
+                    <tr>
+                        <td class="td-icon">
+                            <p></p>
+                        </td>
+                        <td class="td-definicion">
+                            <ul><u><b></b></u> </ul>
+                            <ul></ul>
+                            <ul><u><b></b></u> </ul>
+                            <ul></ul>
+                            <ul> <u><b></b></u></ul>
+                            <ul></ul>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <img class="img" src="./img/LogoGit.png" alt="Logo Git">
+        <img class="img" src="./img/gitlogo.png" alt="Logo GitHub">
+    </footer>
 </body>
 
 </html>
